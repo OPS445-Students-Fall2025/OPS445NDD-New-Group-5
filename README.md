@@ -1,12 +1,4 @@
 # fall 2025 Assignment 2
-Nil
-
-
-network_core.py
-
-
-
-
 #!/usr/bin/env python3
 
 import subprocess

@@ -13,6 +13,19 @@ if sys.version_info < (3, 6):
     print(f"You are running Python {sys.version_info.major}.{sys.version_info.minor}")
     sys.exit(1)
 
+# Check for root/sudo privileges
+def check_root_privileges():
+    if os.geteuid() != 0:
+        print("\n" + "="*60)
+        print("ERROR: This script must be run with root privileges")
+        print("="*60)
+        print("\nUsage:")
+        print("  sudo python3 assignment2.py")
+        #print("  sudo python3 assignment2.py --mode network")
+        #print("  sudo python3 assignment2.py --mode firewall --rules rules.nft")
+        print("\n" + "="*60 + "\n")
+        #sys.exit(1)
+
 def parse_args():
     """
     Parse command-line arguments.
@@ -88,4 +101,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(

@@ -4,8 +4,8 @@ import argparse
 import sys
 import os
 import subprocess
-#import netplan_utils
-#import firewall
+import netplan_utils
+import firewall
 
 
 if sys.version_info < (3, 6):

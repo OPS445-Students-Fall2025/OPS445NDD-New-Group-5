@@ -1,5 +1,17 @@
 #/usr/bin/env python3
 
+"""
+Netplan Utilities Module - Himay Shah
+
+References:
+    - Netplan Documentation: https://netplan.io/
+    - Netplan Reference: https://netplan.io/reference/
+    - Ubuntu Network Configuration: https://ubuntu.com/server/docs/network-configuration
+    - Python shutil: https://docs.python.org/3/library/shutil.html
+    - Python datetime: https://docs.python.org/3/library/datetime.html
+    - sysctl man page: https://man7.org/linux/man-pages/man8/sysctl.8.html
+"""
+
 import os
 import shutil
 import subprocess

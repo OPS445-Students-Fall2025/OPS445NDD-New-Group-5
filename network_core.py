@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
 
+"""
+Network Core Module - Nilkanthkumar Patel
+
+References:
+    - Python subprocess: https://docs.python.org/3/library/subprocess.html
+    - Python re module: https://docs.python.org/3/library/re.html
+    - ip command man page: https://man7.org/linux/man-pages/man8/ip.8.html
+    - CIDR Notation: https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
+    - IP Addressing: https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html
+"""
+
 import subprocess
 
 def run_cmd(cmd): """Run a shell command and return output as text.""" return subprocess.check_output(cmd, text=True).strip()

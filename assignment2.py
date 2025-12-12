@@ -16,6 +16,13 @@ Usage:
     sudo python3 assignment2.py --mode network
     sudo python3 assignment2.py --mode firewall --rules /path/to/rules.nft
     sudo python3 assignment2.py --mode both
+
+References:
+    - Python argparse: https://docs.python.org/3/library/argparse.html
+    - Python subprocess: https://docs.python.org/3/library/subprocess.html
+    - Python os module: https://docs.python.org/3/library/os.html
+    - PEP 8 Style Guide: https://peps.python.org/pep-0008/
+    - OPS445 Course Materials (Seneca College, Fall 2024)
 """
 
 import argparse

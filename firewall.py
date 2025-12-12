@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
 
+"""
+Firewall Module - Bhavya Patel
+
+References:
+    - nftables Wiki: https://wiki.nftables.org/
+    - nftables Quick Reference: https://wiki.nftables.org/wiki-nftables/index.php/Quick_reference-nftables_in_10_minutes
+    - Python subprocess: https://docs.python.org/3/library/subprocess.html
+    - Python os module: https://docs.python.org/3/library/os.html
+"""
+
 import os import subprocess
 
 def configure_firewall(rules_path_arg=None): """ High-level firewall configuration flow.
